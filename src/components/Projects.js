@@ -3,6 +3,39 @@ import React from 'react';
 export default function Projects() {
   return (
     <section id="projects" className="py-5" style={{ backgroundColor: 'white' }}>
+     <div className="container project-box mt-5">
+  <h2 className="mb-4 text-center">Super AI Agent Router</h2>
+
+  <div className="text-center mb-4">
+    <img
+      src="/assets/file2.png"
+      alt="Super AI Agent Architecture"
+      style={{ maxWidth: "100%", height: "auto", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
+    />
+  </div>
+
+  <p className="lead">
+    This is a modular and intelligent AI agent router that orchestrates multiple domain-specific agents (e.g., PDF reader,
+    hospital appointment agent, email assistant, and code generator) behind a single interface. It uses a large language
+    model (LLM) to interpret user queries, choose relevant tools, and route the task accordingly.
+  </p>
+
+  <ul className="mt-4 mb-4">
+    <li>🧠 <strong>LLM-based tool router</strong> using Mistral/Ollama for intelligent tool selection</li>
+    <li>🗂️ <strong>Supports multiple tools:</strong> doctor booking, PDF QA, email sending, code generation</li>
+    <li>⚙️ <strong>Extensible JSON output format</strong> for invoking tools with reasoning trace</li>
+    <li>🔗 <strong>Plug-and-play architecture</strong> — new tools can be added with minimal effort</li>
+    <li>💬 <strong>Frontend built in React</strong> with Bard-like UI for smooth interaction</li>
+  </ul>
+
+  <p className="mb-3">
+    🔗 <strong>GitHub Repo:</strong>{' '}
+    <a href="https://github.com/ajay800800/super-ai-agent" target="_blank" rel="noreferrer">
+      github.com/ajay800800/super-ai-agent
+    </a>
+  </p>
+</div>
+       
       <div className="container project-box">
         <h2 className="mb-4 text-center">Doctor Appointment AI Agent</h2>
 
@@ -39,13 +72,13 @@ export default function Projects() {
       GitHub
     </a>
   </p>
-        <div className="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/ebc0WeVGHDM"
-            title="Doctor AI Agent Demo"
-            allowFullScreen
-          ></iframe>
-        </div>
+        // <div className="video-wrapper">
+        //   <iframe
+        //     src="https://www.youtube.com/embed/ebc0WeVGHDM"
+        //     title="Doctor AI Agent Demo"
+        //     allowFullScreen
+        //   ></iframe>
+        // </div>
       </div>
       <div className="container project-box mt-5">
   <h2 className="mb-4 text-center">Distributed Load Balancer with Sharding & Fault Tolerance</h2>
@@ -81,6 +114,38 @@ export default function Projects() {
     </a>
   </p>
 </div>
+      <div className="container project-box mt-5">
+  <h2 className="mb-4 text-center">AI4Bharat Lang Translator (Text + Speech)</h2>
+
+  // <div className="text-center mb-4">
+  //   <img
+  //     src="/assets/lang-translator-ui.png"
+  //     alt="Lang Translator UI"
+  //     style={{ maxWidth: "100%", height: "auto", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
+  //   />
+  // </div>
+
+  <p className="lead">
+    This app uses AI4Bharat’s open-source IndicTrans2 and IndicWhisper models to translate text or speech from 20+ Indian
+    languages into English. The backend runs Hugging Face-compatible models locally.
+  </p>
+
+  <ul className="mt-4 mb-4">
+    <li>🎙️ <strong>Voice-to-Text</strong> using AI4Bharat Whisper</li>
+    <li>🌐 <strong>Text Translation</strong> using AI4Bharat IndicTrans2</li>
+    <li>🖥️ Runs fully offline with no API calls</li>
+    <li>🧪 Built using Node.js, Python backend, and React frontend</li>
+    <li>📤 Image + audio upload support</li>
+  </ul>
+
+  <p className="mb-3">
+    🔗 <strong>GitHub Repo:</strong>{' '}
+    <a href="https://github.com/ajay800800/lang_translator" target="_blank" rel="noreferrer">
+      github.com/ajay800800/lang_translator
+    </a>
+  </p>
+</div>
+
 <div className="container project-box mt-5">
   <h2 className="mb-4 text-center">LLM from Scratch – GPT-style Transformer</h2>
 
@@ -102,6 +167,70 @@ export default function Projects() {
     </a>
   </p>
 </div>
+      <div className="container project-box mt-5">
+  <h2 className="mb-4 text-center">Autocoder – Python Coding Agent</h2>
+
+  <div className="text-center mb-4">
+    <img
+      src="/assets/autocoder-ui.png"
+      alt="Autocoder UI"
+      style={{ maxWidth: "100%", height: "auto", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
+    />
+  </div>
+
+  <p className="lead">
+    Autocoder is a powerful LLM-based coding agent that takes a prompt and generates correct Python code using an
+    iterative retry mechanism. It saves generated files, executes them, captures output/errors, and updates based on
+    failure reasoning.
+  </p>
+
+  <ul className="mt-4 mb-4">
+    <li>💡 Prompt-driven Python code generation</li>
+    <li>🧠 Automatic error handling and retries (max 5 attempts)</li>
+    <li>📁 Saves every attempt to a file</li>
+    <li>🧪 Includes runner agent to evaluate output in real time</li>
+    <li>🖼️ UI + API for both CLI and Flask frontend</li>
+  </ul>
+
+  <p className="mb-3">
+    🔗 <strong>GitHub Repo:</strong>{' '}
+    <a href="https://github.com/ajay800800/codin_agent" target="_blank" rel="noreferrer">
+      github.com/ajay800800/codin_agent
+    </a>
+  </p>
+</div>
+<div className="container project-box mt-5">
+  <h2 className="mb-4 text-center">Smart Email Agent</h2>
+
+  // <div className="text-center mb-4">
+  //   // <img
+    
+  //   //   alt="Email Agent UI"
+  //   //   style={{ maxWidth: "100%", height: "auto", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
+  //   // />
+  // </div>
+
+  <p className="lead">
+    This AI agent generates and sends emails using Gmail SMTP based on user input. Powered by a local LLM (Mistral),
+    it can turn conversational prompts like “email my doctor tomorrow” into actual scheduled emails.
+  </p>
+
+  <ul className="mt-4 mb-4">
+    <li>📧 Smart email generation using LLM</li>
+    <li>⚙️ Send via Gmail SMTP</li>
+    <li>📆 Supports scheduling, summaries, and custom templates</li>
+    <li>🔒 Secure handling of credentials with dotenv</li>
+    <li>🧠 Can be used standalone or routed via Super AI Router</li>
+  </ul>
+
+  <p className="mb-3">
+    🔗 <strong>GitHub Repo:</strong>{' '}
+    <a href="https://github.com/ajay800800/EMAIL_AGENT" target="_blank" rel="noreferrer">
+      github.com/ajay800800/EMAIL_AGENT
+    </a>
+  </p>
+</div>
+
 <div className="container project-box mt-5">
   <h2 className="mb-4 text-center">Next-Location Prediction Using Fine-Tuned LLMs</h2>
 
