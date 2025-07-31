@@ -3,7 +3,7 @@
 This is a modern, responsive personal portfolio website built using **React**, featuring project showcases, video embeds, contact info, and LLM-based AI projects.
 
 ### ✨ Live Demo
-🔗 [https://doc-mcp-1.onrender.com](https://doc-mcp-1.onrender.com)
+🔗 [Portfolio Website](https://profile-17jp.onrender.com)
 
 ---
 
