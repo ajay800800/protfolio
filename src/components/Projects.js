@@ -1,41 +1,44 @@
 import React from 'react';
 
+
 export default function Projects() {
   return (
     <section id="projects" className="py-5" style={{ backgroundColor: 'white' }}>
-     <div className="container project-box mt-5">
-  <h2 className="mb-4 text-center">Super AI Agent Router</h2>
+      {/* Super AI Agent Router */}
+      <div className="container project-box mt-5">
+        <h2 className="mb-4 text-center">Super AI Agent Router</h2>
 
-  <div className="text-center mb-4">
-    <img
-      src="file2.png"
-      alt="Super AI Agent Architecture"
-      style={{ maxWidth: "100%", height: "auto", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
-    />
-  </div>
+        <div className="text-center mb-4">
+          <img
+            src="/assets/file2.png"
+            alt="Super AI Agent Architecture"
+            style={{ maxWidth: '100%', height: 'auto', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
+          />
+        </div>
 
-  <p className="lead">
-    This is a modular and intelligent AI agent router that orchestrates multiple domain-specific agents (e.g., PDF reader,
-    hospital appointment agent, email assistant, and code generator) behind a single interface. It uses a large language
-    model (LLM) to interpret user queries, choose relevant tools, and route the task accordingly.
-  </p>
+        <p className="lead">
+          This is a modular and intelligent AI agent router that orchestrates multiple domain-specific agents (e.g., PDF reader,
+          hospital appointment agent, email assistant, and code generator) behind a single interface. It uses a large language
+          model (LLM) to interpret user queries, choose relevant tools, and route the task accordingly.
+        </p>
 
-  <ul className="mt-4 mb-4">
-    <li>🧠 <strong>LLM-based tool router</strong> using Mistral/Ollama for intelligent tool selection</li>
-    <li>🗂️ <strong>Supports multiple tools:</strong> doctor booking, PDF QA, email sending, code generation</li>
-    <li>⚙️ <strong>Extensible JSON output format</strong> for invoking tools with reasoning trace</li>
-    <li>🔗 <strong>Plug-and-play architecture</strong> — new tools can be added with minimal effort</li>
-    <li>💬 <strong>Frontend built in React</strong> with Bard-like UI for smooth interaction</li>
-  </ul>
+        <ul className="mt-4 mb-4">
+          <li>🧠 <strong>LLM-based tool router</strong> using Mistral/Ollama for intelligent tool selection</li>
+          <li>🗂️ <strong>Supports multiple tools:</strong> doctor booking, PDF QA, email sending, code generation</li>
+          <li>⚙️ <strong>Extensible JSON output format</strong> for invoking tools with reasoning trace</li>
+          <li>🔗 <strong>Plug-and-play architecture</strong> — new tools can be added with minimal effort</li>
+          <li>💬 <strong>Frontend built in React</strong> with Bard-like UI for smooth interaction</li>
+        </ul>
 
-  <p className="mb-3">
-    🔗 <strong>GitHub Repo:</strong>{' '}
-    <a href="https://github.com/ajay800800/super-ai-agent" target="_blank" rel="noreferrer">
-      github.com/ajay800800/super-ai-agent
-    </a>
-  </p>
-</div>
-       
+        <p className="mb-3">
+          🔗 <strong>GitHub Repo:</strong>{' '}
+          <a href="https://github.com/ajay800800/super-ai-agent" target="_blank" rel="noreferrer">
+            github.com/ajay800800/super-ai-agent
+          </a>
+        </p>
+      </div>
+
+      {/* Doctor Appointment Agent */}
       <div className="container project-box">
         <h2 className="mb-4 text-center">Doctor Appointment AI Agent</h2>
 
@@ -48,8 +51,7 @@ export default function Projects() {
         <p>
           This project was developed with a modular, agentic mindset. The AI doesn’t just chat — it reasons about user
           intent, plans actions like searching for doctors or checking availability, and autonomously executes them
-          through API calls. This mirrors the architecture of Agentic AI frameworks (like AIMCP) where agents
-          perceive, plan, and act — making it extensible, explainable, and future-proof.
+          through API calls.
         </p>
 
         <ul className="mt-4 mb-4">
@@ -57,7 +59,7 @@ export default function Projects() {
           <li>📅 <strong>Time slot selection</strong> and real-time appointment booking</li>
           <li>📡 <strong>Live backend</strong> built with Node.js + Express REST API</li>
           <li>🧠 <strong>Agentic AI loop</strong> to interpret intent and trigger backend operations</li>
-          <li>🔄 <strong>Extensible architecture</strong> (e.g., for future lab test integration or calendar sync)</li>
+          <li>🔄 <strong>Extensible architecture</strong> (e.g., for future lab test integration)</li>
         </ul>
 
         <p className="mb-3">
@@ -66,85 +68,68 @@ export default function Projects() {
             doc-mcp-1.onrender.com
           </a>
         </p>
-          <p className="mt-4">
-    🔗 <strong>GitHub Repo:</strong>{' '}
-    <a href="https://github.com/ajay800800/doc_mcp" target="_blank" rel="noreferrer">
-      GitHub
-    </a>
-  </p>
-        // <div className="video-wrapper">
-        //   <iframe
-        //     src="https://www.youtube.com/embed/ebc0WeVGHDM"
-        //     title="Doctor AI Agent Demo"
-        //     allowFullScreen
-        //   ></iframe>
-        // </div>
+
+        <p>
+          🔗 <strong>GitHub Repo:</strong>{' '}
+          <a href="https://github.com/ajay800800/doc_mcp" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        </p>
       </div>
+
+      {/* Load Balancer */}
       <div className="container project-box mt-5">
-  <h2 className="mb-4 text-center">Distributed Load Balancer with Sharding & Fault Tolerance</h2>
+        <h2 className="mb-4 text-center">Distributed Load Balancer with Sharding & Fault Tolerance</h2>
 
-  <p className="lead">
-    This project is a high-performance, fault-tolerant distributed load balancer built with <strong>Flask</strong> and <strong>Python</strong>. 
-    It features intelligent sharding, automatic leader election, log replication, and two-stage locking to ensure data consistency 
-    and efficient routing under heavy load.
-  </p>
+        <p className="lead">
+          This project is a high-performance, fault-tolerant distributed load balancer built with <strong>Flask</strong> and <strong>Python</strong>.
+        </p>
 
-  <ul className="mt-4 mb-4">
-    <li>🧠 <strong>Sharding Engine</strong> using consistent hashing and shard-server mapping</li>
-    <li>🗂 <strong>Server Manager</strong> with CRUD ops, server map tracking, and failover support</li>
-    <li>🔐 <strong>Two-Stage Locking</strong> for write consistency at global + shard levels</li>
-    <li>⚡ <strong>In-memory load balancing</strong> via Python dictionaries for low-latency reads</li>
-    <li>🔁 <strong>Log Replication</strong> between primary and secondary replicas</li>
-    <li>⚙️ <strong>Leader Election</strong> and dynamic server spawning with state restoration</li>
-  </ul>
+        <ul className="mt-4 mb-4">
+          <li>🧠 <strong>Sharding Engine</strong> using consistent hashing</li>
+          <li>🗂 <strong>Server Manager</strong> with CRUD ops, map tracking, and failover support</li>
+          <li>🔐 <strong>Two-Stage Locking</strong> for consistency</li>
+          <li>⚡ <strong>In-memory balancing</strong> for low-latency reads</li>
+          <li>🔁 <strong>Log Replication</strong> and <strong>Leader Election</strong></li>
+        </ul>
 
-  <p><strong>Tech Stack:</strong> Python, Flask, Docker, Make, SQL/NoSQL abstraction</p>
+        <p><strong>Tech Stack:</strong> Python, Flask, Docker, SQL/NoSQL</p>
 
-  <p className="mt-4"><strong>Performance Benchmark:</strong></p>
-  <ul>
-    <li>6 Servers, 4 Shards, 3 Replicas → 📈 Read: 105/s | ✍️ Write: 29/s</li>
-    <li>6 Servers, 4 Shards, 6 Replicas → 📈 Read: 138/s | ✍️ Write: 19/s</li>
-    <li>10 Servers, 6 Shards, 8 Replicas → 📈 Read: 145/s | ✍️ Write: 17/s</li>
-  </ul>
+        <p>
+          🔗 <strong>GitHub Repo:</strong>{' '}
+          <a href="https://github.com/ajay900900/load_balancer" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        </p>
+      </div>
 
-  <p className="mt-4">
-    🔗 <strong>GitHub Repo:</strong>{' '}
-    <a href="https://github.com/ajay900900/load_balancer" target="_blank" rel="noreferrer">
-      GitHub
-    </a>
-  </p>
-</div>
+      {/* AI4Bharat Lang Translator */}
       <div className="container project-box mt-5">
-  <h2 className="mb-4 text-center">AI4Bharat Lang Translator (Text + Speech)</h2>
+        <h2 className="mb-4 text-center">AI4Bharat Lang Translator (Text + Speech)</h2>
 
-  // <div className="text-center mb-4">
-  //   <img
-  //     src="/assets/lang-translator-ui.png"
-  //     alt="Lang Translator UI"
-  //     style={{ maxWidth: "100%", height: "auto", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
-  //   />
-  // </div>
+        <p className="lead">
+          This app uses AI4Bharat’s IndicTrans2 and IndicWhisper models to translate text or speech from 20+ Indian
+          languages into English. The backend runs Hugging Face-compatible models locally.
+        </p>
 
-  <p className="lead">
-    This app uses AI4Bharat’s open-source IndicTrans2 and IndicWhisper models to translate text or speech from 20+ Indian
-    languages into English. The backend runs Hugging Face-compatible models locally.
-  </p>
+        <ul className="mt-4 mb-4">
+          <li>🎙️ <strong>Voice-to-Text</strong> using AI4Bharat Whisper</li>
+          <li>🌐 <strong>Text Translation</strong> using IndicTrans2</li>
+          <li>🖥️ Fully offline</li>
+          <li>🧪 Node.js + Python backend, React frontend</li>
+          <li>📤 Supports image/audio upload</li>
+        </ul>
 
-  <ul className="mt-4 mb-4">
-    <li>🎙️ <strong>Voice-to-Text</strong> using AI4Bharat Whisper</li>
-    <li>🌐 <strong>Text Translation</strong> using AI4Bharat IndicTrans2</li>
-    <li>🖥️ Runs fully offline with no API calls</li>
-    <li>🧪 Built using Node.js, Python backend, and React frontend</li>
-    <li>📤 Image + audio upload support</li>
-  </ul>
-
-  <p className="mb-3">
-    🔗 <strong>GitHub Repo:</strong>{' '}
-    <a href="https://github.com/ajay800800/lang_translator" target="_blank" rel="noreferrer">
-      github.com/ajay800800/lang_translator
-    </a>
-  </p>
-</div>
+        <p>
+          🔗 <strong>GitHub Repo:</strong>{' '}
+          <a href="https://github.com/ajay800800/lang_translator" target="_blank" rel="noreferrer">
+            github.com/ajay800800/lang_translator
+          </a>
+        </p>
+      </div>
+    </section>
+  );
+}
 
 <div className="container project-box mt-5">
   <h2 className="mb-4 text-center">LLM from Scratch – GPT-style Transformer</h2>
