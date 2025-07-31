@@ -8,7 +8,7 @@ export default function Projects() {
 
   <div className="text-center mb-4">
     <img
-      src="/assets/file2.png"
+      src="file2.png"
       alt="Super AI Agent Architecture"
       style={{ maxWidth: "100%", height: "auto", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
     />
